@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import React from "react";
 
 const Projects = () => {
@@ -41,7 +42,7 @@ const Projects = () => {
   ];
 
   return (
-    <div className="px-10 py-10 max-w-[1440px] w-full m-auto">
+    <div className="bg-gray-50 font-poppins">
       <main className="container mx-auto px-4 py-16">
         {/* Header */}
         <div className="text-center mb-12">
@@ -57,14 +58,19 @@ const Projects = () => {
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8">
           {projectData.map((project, idx) => (
             <div key={idx} className="bg-white rounded-lg overflow-hidden">
-              <img
-                className="w-full h-40 object-cover"
-                src={project.image}
-                alt={project.alt}
-              />
+              <div className="relative w-full h-40">
+                <Image
+                  src={project.image}
+                  alt={project.alt}
+                  fill
+                  className="object-cover"
+                />
+              </div>
               <div className="p-4">
                 <h3 className="font-bold text-gray-800">{project.title}</h3>
-                <p className="text-gray-600 text-sm mt-2">{project.description}</p>
+                <p className="text-gray-600 text-sm mt-2">
+                  {project.description}
+                </p>
               </div>
             </div>
           ))}
@@ -76,7 +82,10 @@ const Projects = () => {
         <h2 className="text-4xl md:text-5xl font-bold text-gray-800">
           Want to be our next success story?
         </h2>
-        <Link href={'/contact'} className="mt-15 px-8 py-3 bg-blue-500 text-white font-semibold rounded-lg shadow-md hover:bg-blue-600 transition-colors">
+        <Link
+          href={"/contact"}
+          className="mt-15 px-8 py-3 bg-blue-500 text-white font-semibold rounded-lg shadow-md hover:bg-blue-600 transition-colors"
+        >
           Get in touch today
         </Link>
       </section>
