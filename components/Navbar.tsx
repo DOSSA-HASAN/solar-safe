@@ -16,7 +16,7 @@ function Navbar() {
                 </Link>
                 <ul className='flex justify-center items-center space-x-10 font-medium text-[16px]'>
                     <li className='hover:text-gray-700 text-[#0F1417]'><Link href={'/products'} >Products</Link></li>
-                    <li className='hover:text-gray-700 text-[#0F1417]'><Link href={'/'} >Services</Link></li>
+                    <li className='hover:text-gray-700 text-[#0F1417]'><Link href={'/#services'} >Services</Link></li>
                     <li className='hover:text-gray-700 text-[#0F1417]'><Link href={'/'} >About Us</Link></li>
                     <li className='hover:text-gray-700 text-[#0F1417]'><Link href={'/'} >Projects</Link></li>
                     <li className='hover:text-gray-700 text-[#0F1417]'><Link href={'/contact'} >Contact</Link></li>
