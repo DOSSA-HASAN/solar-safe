@@ -17,8 +17,8 @@ function Navbar() {
                 <ul className='flex justify-center items-center space-x-10 font-medium text-[16px]'>
                     <li className='hover:text-gray-700 text-[#0F1417]'><Link href={'/products'} >Products</Link></li>
                     <li className='hover:text-gray-700 text-[#0F1417]'><Link href={'/#services'} >Services</Link></li>
-                    <li className='hover:text-gray-700 text-[#0F1417]'><Link href={'/'} >About Us</Link></li>
-                    <li className='hover:text-gray-700 text-[#0F1417]'><Link href={'/'} >Projects</Link></li>
+                    <li className='hover:text-gray-700 text-[#0F1417]'><Link href={'/about'} >About Us</Link></li>
+                    <li className='hover:text-gray-700 text-[#0F1417]'><Link href={'/projects'} >Projects</Link></li>
                     <li className='hover:text-gray-700 text-[#0F1417]'><Link href={'/contact'} >Contact</Link></li>
                     <li className='hover:text-gray-700 bg-[#DBE8F2] hover:bg-[#DBE8F2]/60 px-4 py-2 rounded-md font-bold'><Link href={'/inquire'} >Get Quote</Link></li>
                 </ul>
@@ -36,9 +36,9 @@ function Navbar() {
                 </div>
                 <ul id='mobile-menu' className='flex flex-col justify-center items-center space-y-7 font-medium text-[16px]'>
                     <li className='hover:text-gray-700 text-[#0F1417]'><Link href={'/products'} >Products</Link></li>
-                    <li className='hover:text-gray-700 text-[#0F1417]'><Link href={'/'} >Services</Link></li>
-                    <li className='hover:text-gray-700 text-[#0F1417]'><Link href={'/'} >About Us</Link></li>
-                    <li className='hover:text-gray-700 text-[#0F1417]'><Link href={'/'} >Projects</Link></li>
+                    <li className='hover:text-gray-700 text-[#0F1417]'><Link href={'/#services'} >Services</Link></li>
+                    <li className='hover:text-gray-700 text-[#0F1417]'><Link href={'/about'} >About Us</Link></li>
+                    <li className='hover:text-gray-700 text-[#0F1417]'><Link href={'/projects'} >Projects</Link></li>
                     <li className='hover:text-gray-700 text-[#0F1417]'><Link href={'/contact'} >Contact</Link></li>
                     <li className='hover:text-gray-700 bg-[#DBE8F2] hover:bg-[#DBE8F2]/60 px-4 py-2 rounded-md font-bold'><Link href={'/inquire'} >Get Quote</Link></li>
                 </ul>
