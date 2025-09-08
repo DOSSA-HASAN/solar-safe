@@ -16,7 +16,7 @@ export async function POST(req: Request) {
     });
 
     // Construct body dynamically
-    let body = `
+    const body = `
       New ${type || "Message"} received:
 
       Name: ${name}
