@@ -6,7 +6,7 @@ function page() {
         <section className='px-10 py-10 max-w-[1440px] w-full m-auto flex justify-between items-start lg:flex-row flex-col'>
             <div>
                 <h1 className='font-bold text-[#0F1417] text-[35px]'>Contact us</h1>
-                <p className='text-[#0F1417]'>We're here to help! Reach out to us with any questions or feedback.</p>
+                <p className='text-[#0F1417]'>We&apos;re here to help! Reach out to us with any questions or feedback.</p>
                 <form action="" className='mt-10 space-y-7'>
                     <div className='flex flex-col justify-start items-start w-full space-y-2'>
                         <label htmlFor="name" className='text-[#0F1417]'>Name</label>
